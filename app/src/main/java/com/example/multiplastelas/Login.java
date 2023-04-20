@@ -1,6 +1,5 @@
 package com.example.multiplastelas;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -25,7 +24,7 @@ public class Login extends AppCompatActivity{
         setContentView(R.layout.login);
 
         voltar = findViewById(R.id.btVoltar);
-        logar = findViewById(R.id.btLogar);
+        logar = findViewById(R.id.btCad);
         nome  = findViewById(R.id.tvNome);
         senha = findViewById(R.id.tvSenha);
 

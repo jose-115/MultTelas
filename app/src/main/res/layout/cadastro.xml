@@ -12,7 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10sp"
-        android:layout_marginBottom="5sp"
         android:gravity="center"
         android:text="@string/Cadastro"
         android:textSize="38sp" />
@@ -26,7 +25,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:padding="20dp"
-        android:text="Usuário" />
+        android:text="@string/Usuario" />
 
     <EditText
         android:id="@+id/tvSenha"
@@ -36,7 +35,7 @@
         android:layout_marginTop="5dp"
         android:ems="10"
         android:padding="20dp"
-        android:text="Senha" />
+        android:text="@string/Senha" />
 
     <EditText
         android:id="@+id/tvNome3"
@@ -47,7 +46,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:padding="20dp"
-        android:text="Nome completo" />
+        android:text="@string/NomeCompleto" />
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -59,6 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="-5dp"
             android:text="Sexo:"
             android:textSize="20sp" />
 
@@ -67,6 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="-10dp"
+            android:checked="true"
             android:text="Homem"
             android:textSize="16sp" />
 
@@ -83,7 +84,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="15dp"
-        android:layout_marginTop="15dp"
         android:text="Data de nascimento:"
         android:textSize="20sp" />
 
@@ -102,21 +102,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="15dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:text="Telefone:"
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/tvTelefone2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginHorizontal="15dp"
         android:ems="10"
         android:inputType="phone"
-        android:text="bruh" />
+        android:text="(67) 9999-9999" />
 
     <Button
-        android:id="@+id/btLogar"
+        android:id="@+id/btCad"
         android:layout_width="match_parent"
         android:layout_height="67dp"
         android:layout_marginHorizontal="15dp"

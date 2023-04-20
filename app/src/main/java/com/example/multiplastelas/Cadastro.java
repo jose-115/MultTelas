@@ -78,14 +78,53 @@ public class Cadastro extends AppCompatActivity {
             public void onFocusChange(View view, boolean hasFocus) {
                 EditText plainText = (EditText) nome;
                 if(hasWindowFocus() && nome instanceof EditText){
-                    if (plainText.getText().toString().equals("Usuário")) {
+                    if (plainText.getText().toString().equals("Nome completo")) {
                         plainText.setText("");
                     }
 
                     if (!hasFocus) {
                         String text = nome.getText().toString().trim();
                         if (text.isEmpty()) {
-                            nome.setText("Usuário");
+                            nome.setText("Nome completo");
+                        }
+                    }
+                }
+            }
+        });
+
+
+        data.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                EditText plainText = (EditText) data;
+                if(hasWindowFocus() && data instanceof EditText){
+                    if (plainText.getText().toString().equals("Ex: 01/01/2001")) {
+                        plainText.setText("");
+                    }
+
+                    if (!hasFocus) {
+                        String text = data.getText().toString().trim();
+                        if (text.isEmpty()) {
+                            data.setText("Ex: 01/01/2001");
+                        }
+                    }
+                }
+            }
+        });
+
+        telefone.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                EditText plainText = (EditText) telefone;
+                if(hasWindowFocus() && telefone instanceof EditText){
+                    if (plainText.getText().toString().equals("Ex: (67)9999-9999")) {
+                        plainText.setText("");
+                    }
+
+                    if (!hasFocus) {
+                        String text = telefone.getText().toString().trim();
+                        if (text.isEmpty()) {
+                            telefone.setText("Ex: (67)9999-9999");
                         }
                     }
                 }
@@ -96,12 +135,13 @@ public class Cadastro extends AppCompatActivity {
         cad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String UserUser,Usersenha, UserName;
+                String UserUser,Usersenha, UserName, UserDate, UserTele;
                 UserUser = usuario.getText().toString().trim();
                 Usersenha = senhaCad.getText().toString().trim();
                 UserName = nome.getText().toString().trim();
-
-                if(UserUser.isEmpty() || UserUser.equals("Name") || Usersenha.equals("Senha") || Usersenha.isEmpty() || UserName.isEmpty() || UserName.equals("Name")){
+                UserDate = data.getText().toString().trim();
+                UserTele = telefone.getText().toString().trim();
+                if(UserUser.isEmpty() || UserUser.equals("Usuário") || Usersenha.equals("Senha") || Usersenha.isEmpty() || UserName.isEmpty() || UserName.equals("Nome completo") || UserName.isEmpty() || UserName.equals("Nome completo") || UserDate.isEmpty() || UserDate.equals("Ex: 01/01/2001") || UserTele.isEmpty() || UserTele.equals("Ex: (67)9999-9999")){
                     Toast.makeText(getApplicationContext(), "Preencha todos os campos", Toast.LENGTH_SHORT).show();
                 }else{
                     Toast.makeText(getApplicationContext(), "Registro efetuado com Sucesso!", Toast.LENGTH_SHORT).show();

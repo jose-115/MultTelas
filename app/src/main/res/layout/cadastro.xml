@@ -95,7 +95,7 @@
         android:layout_marginRight="15dp"
         android:ems="10"
         android:inputType="date"
-        tools:text="@tools:sample/date/ddmmyy" />
+        android:text="Ex: 01/01/2001" />
 
     <TextView
         android:id="@+id/tvTelefone"
@@ -113,7 +113,7 @@
         android:layout_marginHorizontal="15dp"
         android:ems="10"
         android:inputType="phone"
-        android:text="(67) 9999-9999" />
+        android:text="Ex: (67)9999-9999" />
 
     <Button
         android:id="@+id/btCad"

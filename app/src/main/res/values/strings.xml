@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MultiplasTelas</string>
+    <string name="Login">Login</string>
+    <string name="Cadastro">Cadastro</string>
+    <string name="Sobre">Sobre</string>
+    <string name="HOME">HOME</string>
+    <string name="Nome">Nome</string>
+    <string name="NomeCompleto">Nome completo</string>
+    <string name="Usuario">Usuário</string>
+    <string name="Senha">Senha</string>
+    <string name=""></string>
+
+    <string name="icone">Icone De Usuario</string>
+    <string name="voltar">Voltar</string>
+    <string name="Logar">Logar</string>
+</resources>

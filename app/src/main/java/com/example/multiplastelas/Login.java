@@ -35,14 +35,14 @@ public class Login extends AppCompatActivity{
             public void onFocusChange(View view, boolean hasFocus) {
                 EditText plainText = (EditText) nome;
                 if(hasWindowFocus() && nome instanceof EditText){
-                    if (plainText.getText().toString().equals("Nome")) {
+                    if (plainText.getText().toString().equals("Usuário")) {
                         plainText.setText("");
                     }
 
                     if (!hasFocus) {
                         String text = nome.getText().toString().trim();
                         if (text.isEmpty()) {
-                            nome.setText("Nome");
+                            nome.setText("Usuário");
                         }
                     }
                 }
@@ -76,7 +76,7 @@ public class Login extends AppCompatActivity{
                 String Usernome,Usersenha;
                 Usernome = nome.getText().toString().trim();
                 Usersenha = senha.getText().toString().trim();
-                if(Usernome.isEmpty() || Usernome.equals("Name") || Usersenha.equals("Senha") || Usersenha.isEmpty()){
+                if(Usernome.isEmpty() || Usernome.equals("Usuário") || Usersenha.equals("Senha") || Usersenha.isEmpty()){
                     Toast.makeText(getApplicationContext(), "Preencha todos os campos", Toast.LENGTH_SHORT).show();
                 }else{
                     Toast.makeText(getApplicationContext(), "Login efetuado com Sucesso!", Toast.LENGTH_SHORT).show();

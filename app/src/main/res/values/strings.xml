@@ -12,4 +12,7 @@
     <string name="icone">Icone De Usuario</string>
     <string name="voltar">Voltar</string>
     <string name="Logar">Logar</string>
+
+    <string name="UFMS">UFMS</string>
+    <string name="TextoSobre">Criadores: Higor Vital e José Leonardo. Estudantes do curso Sistemas de Informação na UFMS</string>
 </resources>

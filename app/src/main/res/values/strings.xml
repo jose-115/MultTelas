@@ -14,5 +14,7 @@
     <string name="Logar">Logar</string>
 
     <string name="UFMS">UFMS</string>
-    <string name="TextoSobre">Criadores: Higor Vital e José Leonardo. Estudantes do curso Sistemas de Informação na UFMS</string>
+    <string name="githubH">GitHub: Higor335</string>
+    <string name="githubJ">GitHub: Jose-115</string>
+    <string name="TextoSobre">Criadores: Higor Vital e José Leonardo. Estudantes do curso Sistemas de Informação na UFMS.</string>
 </resources>

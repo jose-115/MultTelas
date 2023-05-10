@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity" >
 
     <TextView
         android:id="@+id/tvTitulo"
@@ -52,5 +52,4 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:cornerRadius="35dp" />
-
 </LinearLayout>

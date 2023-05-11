@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -43,5 +44,34 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(it);
             }
         });
+    }
+    protected void onStart(){
+        super.onStart();
+        Log.i("APP","ON START");
+    }
+
+    protected void onResume(){
+        super.onResume();
+        Log.i("APP","ON RESUME");
+    }
+
+    protected void onPause(){
+        super.onPause();
+        Log.i("APP","ON PAUSE");
+    }
+
+    protected void onStop(){
+        super.onStop();
+        Log.i("APP","ON STOP");
+    }
+
+    protected void onDestroy(){
+        super.onDestroy();
+        Log.i("APP","ON DESTROY");
+    }
+
+    protected void onRestart(){
+        super.onRestart();
+        Log.i("APP","ON RESTART");
     }
 }

@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -111,5 +112,35 @@ public class Sobre extends AppCompatActivity {
         super.onSaveInstanceState(outState);
         String textoSobre = sobreTxt.getText().toString();
         outState.putString(TEXTO_SOBRE, textoSobre);
+    }
+
+    protected void onStart(){
+        super.onStart();
+        Log.i("APP","ON START");
+    }
+
+    protected void onResume(){
+        super.onResume();
+        Log.i("APP","ON RESUME");
+    }
+
+    protected void onPause(){
+        super.onPause();
+        Log.i("APP","ON PAUSE");
+    }
+
+    protected void onStop(){
+        super.onStop();
+        Log.i("APP","ON STOP");
+    }
+
+    protected void onDestroy(){
+        super.onDestroy();
+        Log.w("APP","ON DESTROY");
+    }
+
+    protected void onRestart(){
+        super.onRestart();
+        Log.d("APP","ON RESTART");
     }
 }

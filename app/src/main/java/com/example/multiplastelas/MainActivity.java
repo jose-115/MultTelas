@@ -67,11 +67,11 @@ public class MainActivity extends AppCompatActivity {
 
     protected void onDestroy(){
         super.onDestroy();
-        Log.i("APP","ON DESTROY");
+        Log.w("APP","ON DESTROY");
     }
 
     protected void onRestart(){
         super.onRestart();
-        Log.i("APP","ON RESTART");
+        Log.d("APP","ON RESTART");
     }
 }
